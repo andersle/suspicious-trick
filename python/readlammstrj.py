@@ -8,7 +8,7 @@ class lammps_trj(object):
         self.variables_order = ['timestep', 'ndump', 'triclinic',
                                 'xlo-flag', 'xhi-flag', 'ylo-flag', 'yhi-flag', 
                                 'zlo-flag', 'zhi-flag', 'xlo', 'xhi', 
-                                'yho', 'yhi','zlo','zhi','fields per atom',
+                                'ylo', 'yhi','zlo','zhi','fields per atom',
                                 'number of blocks']
         self.head_fmt = '<qqiiiiiiiddddddii' # format for reading the header
         self.head_buff = 100 # buffer length for the header
